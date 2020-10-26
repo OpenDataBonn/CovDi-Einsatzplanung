@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <title>Einsatzplanung CovDi - Changelog</title>
+  </head>
+  <body>    
+    <div class="container main_container">
+        <div class="row header_row">
+            <h1>Einsatzplanung CovDi - Changelog</h1>
+        </div>
+        <div class="row main_row">
+            <div class="col main_column">
+                <h3>0.1.4</h3>
+                <ul>
+                    <li>Nutzer Meldungen können jetzt über die Nutzerliste gelöscht werden. Achtung: Wenn die letzte Meldung gelöscht wurde, wird hier wieder die vorherige Angezeigt. Sollten bereits Planungen mit den Einträgen erstellt worden sein, ist ein Löschen der Meldung nicht möglich.</li>
+                </ul>
+                <h3>0.1.3</h3>
+                <ul>
+                    <li>Feste Einplanungen können wieder entfernt werden.</li>
+                    <li>Mitarbeitermeldungen, die nicht Springer sind, können jetzt ebenfalls verschoben werden um so eine bessere Planbarkeit zu ermöglichen.</li>
+                    <li>Anzeige der angegebenen Überstunden.</li>
+                    <li>Feste Einplanungen werden nun in hell-grün und freigegebene, feste Einplaunungen in dunkelgrün dargestellt.</li>
+                    <li>Der Button "Erinnerung schicken" in der Mitarbeiterliste öffnet nun den Email-Client mit dem vorbereiteten Text.</li>
+                </ul>
+                <h3>0.1.2</h3>
+                <ul>
+                    <li>In der Monatsansicht sind zwei Select-Boxen hinzugekommen, in welcher man Monat und Jahr auswählen kann. So kann man direkt zu einem weiter entfernten Monat springen ohne hier die Buttons rechts und links nutzen zu müssen.</li>
+                </ul>
+                <h3>0.1.1</h3>
+                <ul>
+                    <li>Die noch zu bestätigtenden Einträge in der Tagesansicht wurden mit einer Checkbox ausgestattet. Alle ausgewählten Einträge werden zustäzlich zu dem Eintrag fest eingeplant, der mit dem grünen Haken bestätigt wird.</li>
+                    <li>Die Einträge der Mitarbeiter ohne Meldung in den Tages/Wochenansichten werden jetzt alphabetisch sortiert</li>
+                    <li>Die Tagesansicht wurde um zwei Buttons erweitert: 1. Alle Einträge anhaken, hier können alle Einträge zum speichern markiert werden. 2. Alle speichern, hier ist die Funktionalität die gleiche wie bei dem grünen Haken hinter den Einträgen und kann als alternative genutzt werden</li>
+                    <li>Wenn man einen Springer in eine Schicht verschiebt wird er automatisch als zum speichern markiert</li>
+                </ul>
+                <h3>0.1.0</h3>
+                <ul>
+                    <li>Die Mitarbeiterliste zeigt alle Accounts in CovDi mit Email-Adressen und Anzeige des Datums der letzten Meldung für die Einsatzplanung. Wenn man mit der Maus über eine Zeile der Liste fährt wird ein Dialog dargestellt, der die Daten der letzten Meldung anzeigt (Wochenstunden, Private Mail, Private Telefonnummer)</li>
+                    <li>Zu jedem Mitarbeiter werden drei Buttons angezeigt.
+                        <ul>
+                            <li>Erinnerung schicken => noch ohne Funktion, später soll hier direkt eine Mail vom System geschickt werden, mit einem festen Text und dem Link zum FS Formular</li>
+                            <li>Account Mail => öffnet das Email-Programm für eine Email an die Email-Adresse des Accounts</li>
+                            <li>Privat Mail => öffnet das Email-Programm für eine Email an die in der Meldung angegebenene private Email-Adresse</li>
+                        </ul>
+                    </li>
+                    <li>In der Monatsansicht werden Bedarf und bereits eingeplante Belegungen angezeigt</li>
+                    <li>Der Click auf eine Woche in der Monatsansicht zeigt die Wochenansicht</li>
+                    <li>Der Click auf die Datumsangabe in der Monatsansicht zeigt die Tagesansicht</li>
+                    <li>In der Wochenansicht werden Meldungen, tatsächliche Belegung, sowie Abwesenheiten angezeigt. Derzeit werden auch alle Nicht-Meldungen aufgeführt, eventuell wird dies noch ausgeblendet, bei mehr Mitarbeitern. Eine Bearbeitung des Belegungsplans ist hier nicht möglich.</li>
+                    <li>Der Click auf einen Tag oder das Datum zeigt die Tagesansicht</li>
+                    <li>In der Tagesansicht werden Meldungen, tatsächliche Belegung, sowie Abwesenheiten angezeigt. Hier werden ebenfalls Zusatzinformationen wie Email und Telefon sowie Wochenarbeitszeiten angezeigt.</li>
+                    <li>Meldungen werden bei den jeweiligen Tätigkeits-Typen angezeigt. Springer, die sich für beliebige Tätigkeit und beliebige Schicht eingetragen haben werden blau gekennzeichnet angezeigt. In der Tagesansicht können diese Einträge verschoben werden.</li>
+                    <li>Meldungen können in der Tagesansicht in feste Planungen umgewandelt werden. Diese sind nicht mehr verschiebbar. Dazugehörige Meldungen werden dann nicht mehr angezeigt. Nach dem bestätigen des Speicherns einer festen Planung wird die Seite neu geladen. Also müssen Springer derzeit einzeln verschoben und bestätigt werden.</li>
+                    <li>In der Tagesansicht werden auch alle Mitarbeiter als Springer angezeigt, die keine Meldung (Wunsch oder Abwesenheit) für diesen Tag angegeben haben.</li>
+                    <li>Menü gestaltet:
+                        <ul>
+                            <li>Startseite</li>
+                            <li>Einsatzplanung(Monatsübersicht) aktueller Monat</li>
+                            <li>Einsatzplanung(Monatsübersicht) nächster Monat</li>
+                            <li>Nutzerliste</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>0.0.1</h3>
+                <ul>
+                    <li>Framework aufgesetzt</li>
+                    <li>Login</li>
+                </ul>   
+            </div>
+        </div>        
+    </div>    
+  </body>
+</html>

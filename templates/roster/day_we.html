@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-1">
+        <button type="button" class="btn btn-secondary" onclick="prevDay(###TIMESTAMP###)">&lt;&lt;</button>
+    </div>
+    <div class="col">
+        <h3>Einsatzplanung => ###WOCHENTAG###, ###DATUM###</h3>
+    </div>
+    <div class="col-2">
+        <a class="btn" href="?type=weekroster&ts=###TIMESTAMP###">zur Wochenansicht</a>
+    </div>
+    <div class="col-1">
+        <button type="button" class="btn btn-secondary" onclick="nextDay(###TIMESTAMP###)">&gt;&gt;</button>
+    </div>
+</div>
+<hr />
+<div class="row dayrow" data-timestamp="###TIMESTAMP###">
+    <div class="col first" data-schicht="Wochenend">
+        <h5>Wochenendschicht</h5>
+        <div class="day-daycheck" data-needed="###WS_TEAMLEITUNG_BEDARF###" data-given="0" data-taetigkeit="Teamleitung">
+            <span class="info">Teamleitung: ###WS_TEAMLEITUNG_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###WS_TEAMLEITUNG_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="day-daycheck" data-needed="###WS_ARZT_BEDARF###" data-given="0" data-taetigkeit="Arzt">
+            <span class="info">Ärzte: ###WS_ARZT_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###WS_ARZT_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="day-daycheck" data-needed="###WS_MITARBEITER_BEDARF###" data-given="0" data-taetigkeit="Mitarbeiter">
+            <span class="info">Mitarbeiter: ###WS_MITARBEITER_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###WS_MITARBEITER_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col">        
+    </div>
+    <div class="col last">    
+        <h5>Springer</h5>
+        <div class="springer">
+            <ul class="list-group list-group-flush elgroup">
+                ###WS_BEIDE_WITEMS###
+                ###SP_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <h5>ohne Meldung</h5>
+        <div class="springer">
+            <ul class="list-group list-group-flush elgroup">
+                ###UNKNOWN_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <hr />
+        <h5>Nicht verfügbar</h5>
+        <div class="nichtverfuegbar">
+            <ul class="list-group list-group-flush">
+                ###NOT_WITEMS###            
+            </ul>
+        </div>
+        <hr />
+        <h5>Urlaub</h5>
+        <div class="">
+            <ul class="list-group list-group-flush">
+                ###URLAUB_WITEMS###            
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="plan_create_confirm" title="Bitte bestätigen">
+  <p>Fest einplanen?</p>
+</div>

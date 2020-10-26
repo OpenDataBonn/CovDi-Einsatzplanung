@@ -1,0 +1,282 @@
+.header_row {
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+.nav_row {
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    margin-bottom: 10px;    
+}
+
+.main_nav {
+    
+}
+
+.main_nav a.active {
+    color: white;
+}
+
+.main_column .table td, .main_column .table th {
+    cursor: pointer;
+}
+
+.single_header_row {
+    padding-bottom: 5px;
+}
+
+.tab-pane {
+    border: 1px solid #eee;
+    padding: 5px;
+}
+
+.tab-pane .row {
+    padding-top: 5px;
+}
+
+.melde_info {
+    background-color: beige;
+    padding-bottom: 5px;
+}
+
+.with_margin_tb {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footer_row {
+    margin-top: 5px;
+}
+
+.page_jump {
+    margin-left: 15px;
+    width: 350px;
+}
+
+.set_pin {
+    width: 250px;
+}
+
+.info_box {
+    border: 1px solid #ddd;
+    background-color: #eee;
+}
+
+.info_box .row {
+    border-bottom: 1px solid #ddd;
+}
+
+.info_box2 {
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+.info_box2 .row {
+    border-bottom: 1px solid #eee;
+}
+
+#modalError .modal-content {
+    border-color: #f5c6cb;
+    border-width: 2px;
+}
+
+#modalError .modal-header {
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+#base_report_button {
+    float: right;
+}
+
+#login_col {
+    padding-top: 7px;
+}
+
+.ui-autocomplete {
+  z-index:2147483647 !important;
+}
+
+.ui-autocomplete-loading {
+    /*background: white url("images/ui-anim_basic_16x16.gif") right center no-repeat;*/
+}
+
+.btn-mini {
+    padding: .0rem .3rem;
+}
+
+.month-day-card {
+    float: left;
+    height: 200px;
+    line-height: 1em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.month-day-card .card-body {
+    padding: 0.5em;
+}
+
+.month-day-card .list-group-item {
+    padding: 0 0 6px 0;
+    background-color: transparent;
+}
+
+.weekday-6, .weekday-7,
+.weekday-0 {
+    background-color: #eee;
+}
+
+.month-day-card.day_other_month {
+    color: #aaa;
+}
+
+.week-day-card {
+    float: left;
+    height: 100%;
+    line-height: 1em;
+    font-size: 0.9em;    
+}
+
+.week-day-card .card-body {
+    padding: 0.5em;
+}
+
+.week-day-card .list-group-item {
+    padding: 0 0 0 0;
+    background-color: transparent;
+    border: none;
+}
+
+.week-day-card .list-group-item .day-item {
+    border: 1px solid skyblue;
+    margin: 0 0;
+    padding: 3px;
+    background-color: #fff;
+    min-height: 30px;
+}
+
+.week-day-card .list-group-item .day-item.will {
+    
+}
+
+.week-day-card .day-item.nicht {
+    background-color: #fff;
+    color: #777;
+}
+
+.week-day-card .day-item.Urlaub {
+    background-color: #fff;
+    color: #777;
+}
+
+.week-day-card .day-item.kann {
+    background-color: skyblue;
+}
+
+.week-day-card .day-item.kann.Mitarbeiter {
+    background-color: cadetblue;
+}
+
+.week-day-card .day-item.plan {
+    border: 1px solid #ddd;
+    background-color: #bef9b2;
+}
+.week-day-card .day-item.unknown{
+    background-color: #e0b848;
+    border-color: #A06609;
+}
+
+.week-day-card .list-group-item.fixed .day-item {
+    border-color: #ddd;
+}
+
+.week-daycheck .info {
+    font-weight: 600;
+}
+
+.week-day-card h6 {
+    font-weight: 600;
+}
+
+a.datelink {
+    color: black;
+    font-weight: bold;
+}
+
+.dayrow li {
+    border: 0;
+    padding: 0;
+}
+
+.dayrow .card-header,.dayrow .card-body{
+    padding: .25rem .5rem;
+}
+
+.card.kann,
+.card.will{
+    cursor: pointer;
+}
+
+.card.nicht{
+    color: #000;
+}
+
+.dayrow .card-header {
+    background-color: #89bfe8;
+}
+
+.dayrow .nicht .card-header{
+    background-color: #ccc;
+}
+
+.dayrow .fixed .card-header,
+.dayrow .will .card-header{
+    background-color: #fff;
+}
+
+.dayrow .plan .card-header{
+    background-color: #bef9b2;
+}
+
+.week-day-card .day-item.plan.freigegeben,
+.dayrow .freigegeben .card-header {
+    background-color: #85a272;
+}
+
+.dayrow .unknown .card-header{
+    background-color: #e0b848;
+}
+
+.col.first {
+    border-right: 1px solid #ddd;
+}
+.col.last {
+    border-left: 1px solid #ddd;
+}
+
+.dayrow .fixed .card,
+.dayrow .will .card{
+    border-color: #ddd;
+}
+
+.dayrow .card .row{
+    margin: 0;
+}
+
+.dayrow .card .col{
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    background: #888;
+    border: 1px solid #555;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    display: none;
+}
+
+#plan_create_confirm,
+#plan_delete_confirm{
+    display: none;
+}

@@ -1,0 +1,48 @@
+<div class="card week-day-card weekday-###WEEKDAY### ###ACT_MONTH###" style="width: 14%;" data-timestamp="###TIMESTAMP###">
+  <div class="card-body">
+    <h5 class="card-title"><a class="datelink" href="?type=dayroster&ts=###TIMESTAMP###">###DATESTRING###</a></h5>
+    <h6>Wochenendschicht</h6>
+    <div class="week-daycheck" data-needed="###WS_TEAMLEITUNG_BEDARF###" data-given="0">
+        <span class="info">Teamleitung: ###WS_TEAMLEITUNG_BEDARF### / <span class="acount">0</span></span><br />
+        <ul class="list-group list-group-flush elgroup">
+            ###WS_TEAMLEITUNG_WITEMS###
+            <li class="list-group-item nocount"></li>
+        </ul>
+    </div>
+    <div class="week-daycheck" data-needed="###WS_ARZT_BEDARF###" data-given="0">
+        <span class="info">Ärzte: ###WS_ARZT_BEDARF### / <span class="acount">0</span></span><br />
+        <ul class="list-group list-group-flush elgroup">
+            ###WS_ARZT_WITEMS###
+            <li class="list-group-item nocount"></li>
+        </ul>
+    </div>
+    <div class="week-daycheck" data-needed="###WS_MITARBEITER_BEDARF###" data-given="0">
+        <span class="info">Mitarbeiter: ###WS_MITARBEITER_BEDARF### / <span class="acount">0</span></span><br />
+        <ul class="list-group list-group-flush elgroup">
+            ###WS_MITARBEITER_WITEMS###
+            <li class="list-group-item nocount"></li>
+        </ul>
+    </div>
+    <h6>Springer</h6>
+    <div class="">
+        <ul class="list-group list-group-flush elgroup">
+            ###WS_BEIDE_WITEMS###
+            <li class="list-group-item nocount"></li>
+        </ul>        
+    </div>
+    <hr />
+    <h6>Nicht verfügbar</h6>
+    <div class="">
+        <ul class="list-group list-group-flush">
+            ###NOT_WITEMS###            
+        </ul>
+    </div>
+    <hr />
+    <h6>Urlaub</h6>
+    <div class="">
+        <ul class="list-group list-group-flush">
+            ###URLAUB_WITEMS###            
+        </ul>
+    </div>
+  </div>
+</div>

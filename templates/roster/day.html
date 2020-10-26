@@ -1,0 +1,119 @@
+<div class="row">
+    <div class="col-1">
+        <button type="button" class="btn btn-secondary" onclick="prevDay(###TIMESTAMP###)">&lt;&lt;</button>
+    </div>
+    <div class="col-8">
+        <h3>Einsatzplanung => ###WOCHENTAG###, ###DATUM###</h3>
+    </div>
+    <div class="col-2">
+        <a class="btn" href="?type=weekroster&ts=###TIMESTAMP###">zur Wochenansicht</a>
+    </div>
+    <div class="col-1">
+        <button type="button" class="btn btn-secondary" onclick="nextDay(###TIMESTAMP###)">&gt;&gt;</button>
+    </div>
+</div>
+<hr />
+<div class="row dayrow" data-timestamp="###TIMESTAMP###">
+    <div class="col first" data-schicht="Fruehschicht">
+        <h5>Frühschicht</h5>
+        <div class="day-daycheck" data-needed="###FS_TEAMLEITUNG_BEDARF###" data-given="0" data-taetigkeit="Teamleitung">
+            <span class="info">Teamleitung: ###FS_TEAMLEITUNG_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###FS_TEAMLEITUNG_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="day-daycheck" data-needed="###FS_ARZT_BEDARF###" data-given="0" data-taetigkeit="Arzt">
+            <span class="info">Ärzte: ###FS_ARZT_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###FS_ARZT_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="day-daycheck" data-needed="###FS_MITARBEITER_BEDARF###" data-given="0" data-taetigkeit="Mitarbeiter">
+            <span class="info">Mitarbeiter: ###FS_MITARBEITER_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###FS_MITARBEITER_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="">
+            <span class="info">Beides</span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###FS_BEIDE_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col" data-schicht="Spaetschicht">
+        <h5>Spätschicht</h5>
+        <div class="day-daycheck" data-needed="###SS_TEAMLEITUNG_BEDARF###" data-given="0" data-taetigkeit="Teamleitung">
+            <span class="info">Teamleitung: ###SS_TEAMLEITUNG_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###SS_TEAMLEITUNG_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="day-daycheck" data-needed="###SS_ARZT_BEDARF###" data-given="0" data-taetigkeit="Arzt">
+            <span class="info">Ärzte: ###SS_ARZT_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###SS_ARZT_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="day-daycheck" data-needed="###SS_MITARBEITER_BEDARF###" data-given="0" data-taetigkeit="Mitarbeiter">
+            <span class="info">Mitarbeiter: ###SS_MITARBEITER_BEDARF### / <span class="acount">0</span></span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###SS_MITARBEITER_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <div class="">
+            <span class="info">Beides</span><br />
+            <ul class="list-group list-group-flush elgroup">
+                ###SS_BEIDE_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>      
+    </div>
+    <div class="col last">
+        <button type="button" class="btn btn-info" onclick="checkAlltoPlan()">alle: <input type="checkbox" checked readonly></button>&nbsp;
+        <button type="button" class="btn btn-success" onclick="createPlanDialog()"><input type="checkbox" checked readonly> speichern</button>
+        <hr />
+        <h5>Springer</h5>
+        <div class="springer">
+            <ul class="list-group list-group-flush elgroup">
+                ###SP_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <hr />
+        <h5>Ohne Meldung</h5>
+        <div class="springer">
+            <ul class="list-group list-group-flush elgroup">
+                ###UNKNOWN_WITEMS###
+                <li class="list-group-item nocount"><br /></li>
+            </ul>
+        </div>
+        <hr />
+        <h5>Nicht verfügbar</h5>
+        <div class="nichtverfuegbar">
+            <ul class="list-group list-group-flush">
+                ###NOT_WITEMS###            
+            </ul>
+        </div>
+        <hr />
+        <h5>Urlaub</h5>
+        <div class="">
+            <ul class="list-group list-group-flush">
+                ###URLAUB_WITEMS###            
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="plan_create_confirm" title="Bitte bestätigen">
+  <p>Fest einplanen?</p>
+</div>
+<div id="plan_delete_confirm" title="Bitte bestätigen">
+  <p>Nicht mehr fest einplanen?</p>
+</div>
